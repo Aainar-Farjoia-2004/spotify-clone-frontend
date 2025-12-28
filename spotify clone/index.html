@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="/spotify.imag/logo.png" />
+        <title>Spotify - Web Player: Music for everyone</title>
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+
+        <!-- Font Awesome icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- External CSS file -->
+        <link rel="stylesheet" href="style2.css">
+    </head>
+
+    <body>
+
+        <div class="main">
+    
+            <!-- navbar -->
+            <div class="global-nav-bar">
+
+                <!-- On smaller screens, the navbar logo acts as a trigger to show the sidebar -->
+                <div class="global-logo">
+                    <i class="fa-brands fa-spotify"></i>
+                </div>
+
+                <!-- On screens smaller than 1066px, the hamburger icon is shown to toggle additional global-nav-bar options -->
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+               <!-- Dropdown menu that displays global-nav-bar options on smaller screens (<1067px) -->
+                <div class="nav-dropdown">
+
+                    <div class="global-home">
+
+                        <div class="global-home-logo">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+
+                        <div class="global-home-input">
+                            <div class="global-box1">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <input class="global-input" type="text" placeholder="what do you want to play?"
+                                    id="global-search" name="input" />
+                            </div>
+                            <div class="global-box2">
+                                <img src="/spotify.imag/global-box2.png" alt="box-logo">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="global-btns">
+                        <button class="global-btn">Premium</button>
+                        <button class="global-btn">Support</button>
+                        <button class="global-btn" id="border">Download</button>
+                    </div>
+
+                    <div class="global-login">
+
+                        <div class="install-app">
+                            <button id="login-btn-1" class="login-btn">
+                                <i class="fa-regular fa-circle-down"></i> Install App
+                            </button>
+                        </div>
+                        <button class="login-btn">Sign up</button>
+                        <button id="login-btn-2" class="login-btn">Log in</button>
+
+                    </div>
+
+                </div>
+
+                <!-- Original Navbar Elements (shown on large screens >=1067px) -->
+                <div class="global-home">
+
+                    <div class="global-home-logo">
+                        <i class="fa-solid fa-house"></i>
+                    </div>
+                    <div class="global-home-input">
+                        <div class="global-box1">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input class="global-input" type="text" placeholder="what do you want to play?"
+                                id="global-search" name="input" />
+                        </div>
+                        <div class="global-box2">
+                            <img src="/spotify.imag/global-box2.png" alt="box-logo">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="global-btns">
+                    <button class="global-btn">Premium</button>
+                    <button class="global-btn">Support</button>
+                    <button class="global-btn" id="border">Download</button>
+                </div>
+
+                <div class="global-login">
+                    <div class="install-app">
+                        <button id="login-btn-1" class="login-btn">
+                            <i class="fa-regular fa-circle-down"></i> Install App
+                        </button>
+                    </div>
+                    <button class="login-btn">Sign up</button>
+                    <button id="login-btn-2" class="login-btn">Log in</button>
+                </div>
+
+            </div>
+
+
+            <!-- sidebar -->
+            <div class="sidebar">
+
+                <div class="library">
+                    <div class="options">
+
+                        <div class="lib-options ">
+                            <img src="/spotify.imag/library_icon.png" />
+                            <a href="#">Your Library</a>
+                        </div>
+
+                        <div class="lib-icons">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="lib-box">
+
+                        <div class="box">
+                            <div class="box-para">
+                                <span class="box-p1">Create your first playlist</span>
+                                <span class="box-p2">It's easy, we'll help you</span>
+                            </div>
+                            <div class="btn">
+                                <button class="badge">Create playlist</button>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="box-para">
+                                <span class="box-p1">Let's find some podcasts to follow</span>
+                                <span class="box-p2">we'll keep you updated on new episodes</span>
+                            </div>
+                            <div class="btn">
+                                <button class="badge">Browse podcasts</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="lib-footer">
+
+                        <div class="footer">
+                            <div class="foot-1">
+                                <span>Legal</span>
+                                <span>Safty&Privacy Center</span>
+                                <span>Privacy Policy</span>
+                                <span>Cookies</span>
+                                <span>About Ads</span>
+                                <span>Accessibility</span>
+                            </div>
+                            <div class="foot-2">
+                                <span>Cookies</span>
+                            </div>
+                        </div>
+
+                        <div class="footer-btn">
+                            <div class="foot-btn">
+                                <button class="fbtn">
+                                    <i class="fa-solid fa-globe"></i>
+                                    <span>English</span>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- main content -->
+            <div class="main-content">
+
+                <div class="heading">
+                    <div class="heading1">
+                        <a href="#">Popular artists</a>
+                    </div>
+                    <div class="heading2">
+                        <a href="#">Show all</a>
+                    </div>
+                </div>
+
+                <div class="card-container">
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="/spotify.imag/card1.jpg" />
+                            <div class="icon">
+                                <span class="outer">
+                                    <i class="fas fa-play play-icon"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <span class="card-title">Pritam</span>
+                        <p class="card-info">Artist</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="/spotify.imag/card2.jpg" />
+                            <div class="icon">
+                                <span class="outer">
+                                    <i class="fas fa-play play-icon"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <span class="card-title">Arijit Singh</span>
+                        <p class="card-info">Artist</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="/spotify.imag/card3.jpg" />
+                            <div class="icon">
+                                <span class="outer">
+                                    <i class="fas fa-play play-icon"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <span class="card-title">Sachin-Jigar</span>
+                        <p class="card-info">Artist</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="/spotify.imag/card4.jpg" />
+                            <div class="icon">
+                                <span class="outer">
+                                    <i class="fas fa-play play-icon"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <span class="card-title">A.R.Rahman</span>
+                        <p class="card-info">Artist</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="/spotify.imag/card5.jpg" />
+                            <div class="icon">
+                                <span class="outer">
+                                    <i class="fas fa-play play-icon"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <span class="card-title">Vishal-Shekhar</span>
+                        <p class="card-info">Artist</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="/spotify.imag/card6.jpg" />
+                            <div class="icon">
+                                <span class="outer">
+                                    <i class="fas fa-play play-icon"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <span class="card-title">Atif Aslam</span>
+                        <p class="card-info">Artist</p>
+                    </div>
+
+                </div>
+
+                <div class="heading">
+                    <div class="heading1">
+                        <a href="#">Popular Albums and singles</a>
+                    </div>
+                    <div class="heading2">
+                        <a href="#">Show all</a>
+                    </div>
+                </div>
+
+                <div class="card-container">
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img class="imags" src="/spotify.imag/card7.png" />
+                            <div class="icon">
+                                <span class="outer">
+                                    <i class="fas fa-play play-icon"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <span class="card-title">Glory</span>
+                        <p class="card-info para">Yo Yo Honey Singh</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img class="imags" src="/spotify.imag/card8.png" />
+                            <div class="icon">
+                                <span class="outer">
+                                    <i class="fas fa-play play-icon"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <span class="card-title">Ashiqui 2</span>
+                        <p class="card-info para">Mithoon,Ankit Tiwari,Jeet Gannguli</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img class="imags" src="/spotify.imag/card9.png" />
+                            <div class="icon">
+                                <span class="outer">
+                                    <i class="fas fa-play play-icon"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <span class="card-title">Yeh Jawaani hai Deewani</span>
+                        <p class="card-info para">Pritam</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img class="imags" src="/spotify.imag/card10.png" />
+                            <div class="icon">
+                                <span class="outer">
+                                    <i class="fas fa-play play-icon"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <span class="card-title">Who &#40;Remixes&#41;</span>
+                        <p class="card-info para">Jimin</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img class="imags" src="/spotify.imag/card11.png" />
+                            <div class="icon">
+                                <span class="outer">
+                                    <i class="fas fa-play play-icon"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <span class="card-title">Meaking Memories</span>
+                        <p class="card-info para">Karan Aujla,ikky</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img class="imags" src="/spotify.imag/card12.jpg" />
+                            <div class="icon">
+                                <span class="outer">
+                                    <i class="fas fa-play play-icon"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <span class="card-title">Jo Tum Mere Ho</span>
+                        <p class="card-info para">Anuv Jain</p>
+                    </div>
+
+                </div>
+
+                <div class="heading">
+                    <div class="heading1">
+                        <a href="#">Popular radio</a>
+                    </div>
+                    <div class="heading2">
+                        <a href="#">Show all</a>
+                    </div>
+                </div>
+
+                <div class="card-container">
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img class="imags" src="/spotify.imag/card13.png" />
+                            <div class="icon">
+                                <span class="outer">
+                                    <i class="fas fa-play play-icon"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <p class="card-info ">With Sachin-Jigar, Vishal-Shekhar,Atif...</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img class="imags" src="/spotify.imag/card14.png" />
+                            <div class="icon">
+                                <span class="outer">
+                                    <i class="fas fa-play play-icon"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <p class="card-info ">With A.R.Rahman, Vishal-Shekhar,Atif...</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img class="imags" src="/spotify.imag/card15.png" />
+                            <div class="icon">
+                                <span class="outer">
+                                    <i class="fas fa-play play-icon"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <p class="card-info ">With Karan Aujila, Shubh,Sidhu Moose...</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img class="imags" src="/spotify.imag/card16.png" />
+                            <div class="icon">
+                                <span class="outer">
+                                    <i class="fas fa-play play-icon"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <p class="card-info ">With Armaan Malik, Atif Aslam,Ankit Tiwa...</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img class="imags" src="/spotify.imag/card17.png" />
+                            <div class="icon">
+                                <span class="outer">
+                                    <i class="fas fa-play play-icon"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <p class="card-info ">With K.J.Yesudas, Swarnalatha,Uma...</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img class="imags" src="/spotify.imag/card18.png" />
+                            <div class="icon">
+                                <span class="outer">
+                                    <i class="fas fa-play play-icon"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <p class="card-info ">With Anirudh Ravichander,Santhos...</p>
+                    </div>
+
+                </div>
+
+                <div class="heading">
+                    <div class="heading1">
+                        <a href="#">Featured Charts</a>
+                    </div>
+                    <div class="heading2">
+                        <a href="#">Show all</a>
+                    </div>
+                </div>
+
+                <div class="card-container">
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img class="imags" src="/spotify.imag/card19.png" />
+                            <div class="icon">
+                                <span class="outer">
+                                    <i class="fas fa-play play-icon"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <p class="card-info">Your weekly update of the most played track.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img class="imags" src="/spotify.imag/card20.png" />
+                            <div class="icon">
+                                <span class="outer">
+                                    <i class="fas fa-play play-icon"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <p class="card-info">Your weekly update of the most played track.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img class="imags" src="/spotify.imag/card21.png" />
+                            <div class="icon">
+                                <span class="outer">
+                                    <i class="fas fa-play play-icon"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <p class="card-info ">Your daily update of the most played track.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img class="imags" src="/spotify.imag/card22.png" />
+                            <div class="icon">
+                                <span class="outer">
+                                    <i class="fas fa-play play-icon"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <p class="card-info ">Your daily update of the most played track.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img class="imags" src="/spotify.imag/card23.png" />
+                            <div class="icon">
+                                <span class="outer">
+                                    <i class="fas fa-play play-icon"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <p class="card-info ">Your daily update of the most viral track.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img class="imags" src="/spotify.imag/card24.png" />
+                            <div class="icon">
+                                <span class="outer">
+                                    <i class="fas fa-play play-icon"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <p class="card-info ">Your daily update of the most viral track.</p>
+                    </div>
+
+                </div>
+
+                <div class="heading">
+                    <div class="heading1">
+                        <a href="#">India's Best</a>
+                    </div>
+                    <div class="heading2">
+                        <a href="#">Show all</a>
+                    </div>
+                </div>
+
+                <div class="card-container">
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img class="imags" src="/spotify.imag/card25.png" />
+                            <div class="icon">
+                                <span class="outer">
+                                    <i class="fas fa-play play-icon"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <p class="card-info">Hottest tracks from your favourite l-Pop...</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img class="imags" src="/spotify.imag/card26.png" />
+                            <div class="icon">
+                                <span class="outer">
+                                    <i class="fas fa-play play-icon"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <p class="card-info">Bollywood Central, &nbsp; jab baje toh seedha...</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img class="imags" src="/spotify.imag/card27.png" />
+                            <div class="icon">
+                                <span class="outer">
+                                    <i class="fas fa-play play-icon"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <p class="card-info ">Ultimate 101 Punjabi Hits with Karan Aujla</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img class="imags" src="/spotify.imag/card28.png" />
+                            <div class="icon">
+                                <span class="outer">
+                                    <i class="fas fa-play play-icon"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <p class="card-info ">Finest collection of Tamil Music from the...</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img class="imags" src="/spotify.imag/card29.png" />
+                            <div class="icon">
+                                <span class="outer">
+                                    <i class="fas fa-play play-icon"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <p class="card-info ">The Finest set of Telugu music from th..</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img class="imags" src="/spotify.imag/card30.png" />
+                            <div class="icon">
+                                <span class="outer">
+                                    <i class="fas fa-play play-icon"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <p class="card-info ">Finest collection of Tamil Music from the...</p>
+                    </div>
+
+                </div>
+
+
+                <!-- footer -->
+                <div class="footer-bottom">
+
+                    <div class="footer-options">
+
+                        <div class="option">
+                            <p class="foot-p">Company</p>
+                            <span class="foot-op">About</span>
+                            <span class="foot-op">Jobs</span>
+                            <span class="foot-op">For the Record</span>
+                        </div>
+
+                        <div class="option">
+                            <p class="foot-p">Communities</p>
+                            <span class="foot-op">For Artists</span>
+                            <span class="foot-op">Developers</span>
+                            <span class="foot-op">Avertising</span>
+                            <span class="foot-op">Investors</span>
+                            <span class="foot-op">Vendors</span>
+                        </div>
+
+                        <div class="option">
+                            <p class="foot-p">Useful Links</p>
+                            <span class="foot-op">Support</span>
+                            <span class="foot-op">Free Mobile App</span>
+                            <span class="foot-op">Popular by Country</span>
+                        </div>
+
+                        <div class="option">
+                            <p class="foot-p">Spotify Plans</p>
+                            <span class="foot-op">Premium Individual</span>
+                            <span class="foot-op">Premium Duo</span>
+                            <span class="foot-op">Premium Family</span>
+                            <span class="foot-op">Premium Student</span>
+                            <span class="foot-op">Spotify Free</span>
+                        </div>
+
+                        <div class="social-media">
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        </div>
+
+                    </div>
+
+                    <div class="copyright">
+                        <i class="fa-regular fa-copyright"></i>
+                        <p class="copyright-p">2025 Spotify AB</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- link External js -->
+        <script src="script.js"></script>
+
+    </body>
+
+</html>
