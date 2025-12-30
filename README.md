@@ -4,6 +4,11 @@ A responsive Spotify-inspired web application built using **HTML, CSS, and JavaS
 This project focuses on modern UI design, responsiveness, and interactive navigation behavior.
 
 ---
+## 🌍 Live Preview
+
+🔗 https://aainarfy.netlify.app/
+
+---
 
 ## 🚀 Features
 
