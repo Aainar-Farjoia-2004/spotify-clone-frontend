@@ -68,16 +68,6 @@ This project focuses on modern UI design, responsiveness, and interactive naviga
 
 ---
 
-## 📂 Project Structure
-
-├── index.html
-├── style2.css
-├── script.js
-└── README.md
-
-
----
-
 ## 🌱 What I Learned
 
 - Building responsive layouts using Flexbox
